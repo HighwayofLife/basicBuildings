@@ -22,11 +22,10 @@
   <building-types>
     <building-type id="model.building.carpenterHouse">
       <production>
-        <input goods-type="model.goods.lumber" value="4"/>
-        <output goods-type="model.goods.hammers" value="4"/>
+        <input goods-type="model.goods.lumber" value="3"/>
+        <output goods-type="model.goods.hammers" value="6"/>
       </production>
-      <ability id="model.ability.build"
-               value="true">
+      <ability id="model.ability.build" value="true">
         <scope type="model.unit.wagonTrain"/>
       </ability>
     </building-type>
@@ -36,19 +35,18 @@
                    competence-factor="2" rebel-factor="2"
                    upkeep="10">
       <production>
-        <input goods-type="model.goods.lumber" value="8"/>
-        <output goods-type="model.goods.hammers" value="8"/>
+        <input goods-type="model.goods.lumber" value="6"/>
+        <output goods-type="model.goods.hammers" value="12"/>
       </production>
-      <required-goods id="model.goods.hammers"
-                      value="52"/>
+      <required-goods id="model.goods.hammers" value="52"/>
+      <ability id="model.ability.expertsUseConnections" value="true"/>
       <modifier id="model.modifier.tileTypeChangeProduction"
                 type="multiplicative" value="3">
         <scope type="model.goods.lumber"/>
       </modifier>
     </building-type>
     <building-type id="model.building.blacksmithHouse">
-      <required-goods id="model.goods.hammers"
-                      value="20"/>
+      <required-goods id="model.goods.hammers" value="32"/>
       <production>
         <input goods-type="model.goods.ore" value="3"/>
         <output goods-type="model.goods.tools" value="3"/>
@@ -61,7 +59,7 @@
                    upkeep="5">
       <production>
         <input goods-type="model.goods.ore" value="6"/>
-        <output goods-type="model.goods.tools" value="6"/>
+        <output goods-type="model.goods.tools" value="9"/>
       </production>
       <required-goods id="model.goods.hammers"
                       value="64"/>
@@ -76,7 +74,7 @@
                    required-population="8" upkeep="15">
       <production>
         <input goods-type="model.goods.ore" value="6"/>
-        <output goods-type="model.goods.tools" value="9"/>
+        <output goods-type="model.goods.tools" value="12"/>
       </production>
       <required-goods id="model.goods.hammers"
                       value="240"/>
@@ -88,7 +86,7 @@
     </building-type>
     <building-type id="model.building.tobacconistHouse">
       <required-goods id="model.goods.hammers"
-                      value="20"/>
+                      value="32"/>
       <production>
         <input goods-type="model.goods.tobacco" value="3"/>
         <output goods-type="model.goods.cigars" value="3"/>
@@ -101,7 +99,7 @@
                    upkeep="5">
       <production>
         <input goods-type="model.goods.tobacco" value="6"/>
-        <output goods-type="model.goods.cigars" value="6"/>
+        <output goods-type="model.goods.cigars" value="9"/>
       </production>
       <required-goods id="model.goods.hammers"
                       value="64"/>
@@ -116,7 +114,7 @@
                    required-population="8" upkeep="15">
       <production>
         <input goods-type="model.goods.tobacco" value="6"/>
-        <output goods-type="model.goods.cigars" value="9"/>
+        <output goods-type="model.goods.cigars" value="12"/>
       </production>
       <required-goods id="model.goods.hammers"
                       value="160"/>
@@ -128,7 +126,7 @@
     </building-type>
     <building-type id="model.building.weaverHouse">
       <required-goods id="model.goods.hammers"
-                      value="20"/>
+                      value="32"/>
       <production>
         <input goods-type="model.goods.cotton" value="3"/>
         <output goods-type="model.goods.cloth" value="3"/>
@@ -141,7 +139,7 @@
                    upkeep="5">
       <production>
         <input goods-type="model.goods.cotton" value="6"/>
-        <output goods-type="model.goods.cloth" value="6"/>
+        <output goods-type="model.goods.cloth" value="9"/>
       </production>
       <required-goods id="model.goods.hammers"
                       value="64"/>
@@ -156,7 +154,7 @@
                    required-population="8" upkeep="15">
       <production>
         <input goods-type="model.goods.cotton" value="6"/>
-        <output goods-type="model.goods.cloth" value="9"/>
+        <output goods-type="model.goods.cloth" value="12"/>
       </production>
       <required-goods id="model.goods.hammers"
                       value="160"/>
@@ -168,7 +166,7 @@
     </building-type>
     <building-type id="model.building.distillerHouse">
       <required-goods id="model.goods.hammers"
-                      value="20"/>
+                      value="32"/>
       <production>
         <input goods-type="model.goods.sugar" value="3"/>
         <output goods-type="model.goods.rum" value="3"/>
@@ -181,12 +179,10 @@
                    upkeep="5">
       <production>
         <input goods-type="model.goods.sugar" value="6"/>
-        <output goods-type="model.goods.rum" value="6"/>
+        <output goods-type="model.goods.rum" value="9"/>
       </production>
-      <required-goods id="model.goods.hammers"
-                      value="64"/>
-      <required-goods id="model.goods.tools"
-                      value="20"/>
+      <required-goods id="model.goods.hammers" value="64"/>
+      <required-goods id="model.goods.tools" value="20"/>
     </building-type>
     <building-type id="model.building.rumFactory"
                    extends="model.building.rumDistillery"
@@ -196,19 +192,16 @@
                    required-population="8" upkeep="15">
       <production>
         <input goods-type="model.goods.sugar" value="6"/>
-        <output goods-type="model.goods.rum" value="9"/>
+        <output goods-type="model.goods.rum" value="12"/>
       </production>
-      <required-goods id="model.goods.hammers"
-                      value="160"/>
-      <required-goods id="model.goods.tools"
-                      value="100"/>
+      <required-goods id="model.goods.hammers" value="160"/>
+      <required-goods id="model.goods.tools" value="100"/>
       <required-ability id="model.ability.buildFactory"/>
       <ability id="model.ability.expertsUseConnections"
                value="true"/>
     </building-type>
     <building-type id="model.building.furTraderHouse">
-      <required-goods id="model.goods.hammers"
-                      value="20"/>
+      <required-goods id="model.goods.hammers" value="32"/>
       <production>
         <input goods-type="model.goods.furs" value="3"/>
         <output goods-type="model.goods.coats" value="3"/>
@@ -221,12 +214,10 @@
                    upkeep="5">
       <production>
         <input goods-type="model.goods.furs" value="6"/>
-        <output goods-type="model.goods.coats" value="6"/>
+        <output goods-type="model.goods.coats" value="9"/>
       </production>
-      <required-goods id="model.goods.hammers"
-                      value="56"/>
-      <required-goods id="model.goods.tools"
-                      value="20"/>
+      <required-goods id="model.goods.hammers" value="56"/>
+      <required-goods id="model.goods.tools" value="20"/>
     </building-type>
     <building-type id="model.building.furFactory"
                    extends="model.building.furTradingPost"
@@ -236,12 +227,10 @@
                    required-population="6" upkeep="15">
       <production>
         <input goods-type="model.goods.furs" value="6"/>
-        <output goods-type="model.goods.coats" value="9"/>
+        <output goods-type="model.goods.coats" value="12"/>
       </production>
-      <required-goods id="model.goods.hammers"
-                      value="160"/>
-      <required-goods id="model.goods.tools"
-                      value="100"/>
+      <required-goods id="model.goods.hammers" value="160"/>
+      <required-goods id="model.goods.tools" value="100"/>
       <required-ability id="model.ability.buildFactory"/>
       <ability id="model.ability.expertsUseConnections"
                value="true"/>
@@ -249,30 +238,24 @@
     <building-type id="model.building.schoolhouse"
                    workplaces="1" minimum-skill="1" maximum-skill="1"
                    required-population="4" upkeep="5">
-      <required-goods id="model.goods.hammers"
-                      value="64"/>
-      <ability id="model.ability.teach"
-               value="true"/>
+      <required-goods id="model.goods.hammers" value="64"/>
+      <ability id="model.ability.teach" value="true"/>
     </building-type>
     <building-type id="model.building.college"
                    extends="model.building.schoolhouse"
                    workplaces="2" maximum-skill="2"
                    upgrades-from="model.building.schoolhouse"
                    required-population="8" upkeep="10">
-      <required-goods id="model.goods.hammers"
-                      value="160"/>
-      <required-goods id="model.goods.tools"
-                      value="50"/>
+      <required-goods id="model.goods.hammers" value="160"/>
+      <required-goods id="model.goods.tools" value="50"/>
     </building-type>
     <building-type id="model.building.university"
                    extends="model.building.college"
                    workplaces="3" maximum-skill="4"
                    upgrades-from="model.building.college"
                    required-population="10" upkeep="15">
-      <required-goods id="model.goods.hammers"
-                      value="200"/>
-      <required-goods id="model.goods.tools"
-                      value="100"/>
+      <required-goods id="model.goods.hammers" value="200"/>
+      <required-goods id="model.goods.tools" value="100"/>
     </building-type>
     <building-type id="model.building.armory"
                    priority="400" upkeep="5">
@@ -281,8 +264,7 @@
         <output goods-type="model.goods.muskets" value="3"/>
       </production>
       <!-- priority should be less than the colony's build queue -->
-      <required-goods id="model.goods.hammers"
-                      value="52"/>
+      <required-goods id="model.goods.hammers" value="52"/>
       <ability id="model.ability.build"
                value="true">
         <scope type="model.unit.artillery"/>
@@ -295,7 +277,7 @@
                    required-population="8" upkeep="10">
       <production>
         <input goods-type="model.goods.tools" value="6"/>
-        <output goods-type="model.goods.muskets" value="6"/>
+        <output goods-type="model.goods.muskets" value="9"/>
       </production>
       <required-goods id="model.goods.hammers"
                       value="120"/>
@@ -309,8 +291,8 @@
                    competence-factor="3" rebel-factor="1.5"
                    upkeep="15">
       <production>
-        <input goods-type="model.goods.tools" value="9"/>
-        <output goods-type="model.goods.muskets" value="9"/>
+        <input goods-type="model.goods.tools" value="6"/>
+        <output goods-type="model.goods.muskets" value="12"/>
       </production>
       <required-goods id="model.goods.hammers"
                       value="240"/>
@@ -322,9 +304,9 @@
     </building-type>
     <building-type id="model.building.chapel" workplaces="0">
       <required-goods id="model.goods.hammers"
-                      value="20"/>
+                      value="32"/>
       <production unattended="true">
-        <output goods-type="model.goods.crosses" value="2"/>
+        <output goods-type="model.goods.crosses" value="1"/>
       </production>
     </building-type>
     <building-type id="model.building.church"
@@ -333,13 +315,12 @@
                    workplaces="3"
                    required-population="3" upkeep="5">
       <production unattended="true">
-        <output goods-type="model.goods.crosses" value="4"/>
+        <output goods-type="model.goods.crosses" value="3"/>
       </production>
       <production>
-        <output goods-type="model.goods.crosses" value="7"/>
+        <output goods-type="model.goods.crosses" value="6"/>
       </production>
-      <required-goods id="model.goods.hammers"
-                      value="64"/>
+      <required-goods id="model.goods.hammers" value="64"/>
       <ability id="model.ability.dressMissionary"
                value="true"/>
     </building-type>
@@ -349,7 +330,7 @@
                    competence-factor="2" rebel-factor="2"
                    required-population="8" upkeep="15">
       <production unattended="true">
-        <output goods-type="model.goods.crosses" value="5"/>
+        <output goods-type="model.goods.crosses" value="6"/>
       </production>
       <production>
         <output goods-type="model.goods.crosses" value="12"/>
@@ -512,19 +493,20 @@
         <scope ability-id="model.ability.person" match-negated="true"/>
       </modifier>
     </building-type>
-    <building-type id="model.building.customHouse"
-                   workplaces="0"
-                   upkeep="15">
-      <required-goods id="model.goods.hammers"
-                      value="160"/>
-      <required-goods id="model.goods.tools"
-                      value="50"/>
+
+    <building-type id="model.building.customHouse" workplaces="0" upkeep="15"
+				   produces="model.goods.tradeGoods">
+      <required-goods id="model.goods.hammers" value="160"/>
+      <required-goods id="model.goods.tools" value="50"/>
       <required-ability id="model.ability.buildCustomHouse"/>
-      <ability id="model.ability.export"
-               value="true"/>
-      <ability id="model.ability.coastalOnly"
-               value="false"/>
+      <modifier id="model.goods.tradeGoods" type="additive" value="1"/>
+      <ability id="model.ability.export" value="true"/>
+      <ability id="model.ability.coastalOnly" value="false"/>
+      <production>
+        <output goods-type="model.goods.tradeGoods" value="3"/>
+      </production>
     </building-type>
+
   </building-types>
 
 </freecol-specification>
