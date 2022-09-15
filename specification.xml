@@ -20,20 +20,10 @@
   -->
 <freecol-specification id="basicBuildings" version="0.1">
   <building-types>
-    <building-type id="model.building.townHall">
-      <required-goods id="model.goods.hammers"
-                      value="52"/>
-      <production unattended="true">
-        <output goods-type="model.goods.bells" value="2"/>
-      </production>
-      <production>
-        <output goods-type="model.goods.bells" value="5"/>
-      </production>
-    </building-type>
     <building-type id="model.building.carpenterHouse">
       <production>
-        <input goods-type="model.goods.lumber" value="3"/>
-        <output goods-type="model.goods.hammers" value="3"/>
+        <input goods-type="model.goods.lumber" value="4"/>
+        <output goods-type="model.goods.hammers" value="4"/>
       </production>
       <ability id="model.ability.build"
                value="true">
@@ -46,8 +36,8 @@
                    competence-factor="2" rebel-factor="2"
                    upkeep="10">
       <production>
-        <input goods-type="model.goods.lumber" value="6"/>
-        <output goods-type="model.goods.hammers" value="6"/>
+        <input goods-type="model.goods.lumber" value="8"/>
+        <output goods-type="model.goods.hammers" value="8"/>
       </production>
       <required-goods id="model.goods.hammers"
                       value="52"/>
@@ -58,7 +48,7 @@
     </building-type>
     <building-type id="model.building.blacksmithHouse">
       <required-goods id="model.goods.hammers"
-                      value="52"/>
+                      value="20"/>
       <production>
         <input goods-type="model.goods.ore" value="3"/>
         <output goods-type="model.goods.tools" value="3"/>
@@ -98,7 +88,7 @@
     </building-type>
     <building-type id="model.building.tobacconistHouse">
       <required-goods id="model.goods.hammers"
-                      value="52"/>
+                      value="20"/>
       <production>
         <input goods-type="model.goods.tobacco" value="3"/>
         <output goods-type="model.goods.cigars" value="3"/>
@@ -138,7 +128,7 @@
     </building-type>
     <building-type id="model.building.weaverHouse">
       <required-goods id="model.goods.hammers"
-                      value="52"/>
+                      value="20"/>
       <production>
         <input goods-type="model.goods.cotton" value="3"/>
         <output goods-type="model.goods.cloth" value="3"/>
@@ -178,7 +168,7 @@
     </building-type>
     <building-type id="model.building.distillerHouse">
       <required-goods id="model.goods.hammers"
-                      value="52"/>
+                      value="20"/>
       <production>
         <input goods-type="model.goods.sugar" value="3"/>
         <output goods-type="model.goods.rum" value="3"/>
@@ -218,7 +208,7 @@
     </building-type>
     <building-type id="model.building.furTraderHouse">
       <required-goods id="model.goods.hammers"
-                      value="52"/>
+                      value="20"/>
       <production>
         <input goods-type="model.goods.furs" value="3"/>
         <output goods-type="model.goods.coats" value="3"/>
@@ -332,9 +322,9 @@
     </building-type>
     <building-type id="model.building.chapel" workplaces="0">
       <required-goods id="model.goods.hammers"
-                      value="42"/>
+                      value="20"/>
       <production unattended="true">
-        <output goods-type="model.goods.crosses" value="3"/>
+        <output goods-type="model.goods.crosses" value="2"/>
       </production>
     </building-type>
     <building-type id="model.building.church"
@@ -346,7 +336,7 @@
         <output goods-type="model.goods.crosses" value="4"/>
       </production>
       <production>
-        <output goods-type="model.goods.crosses" value="6"/>
+        <output goods-type="model.goods.crosses" value="7"/>
       </production>
       <required-goods id="model.goods.hammers"
                       value="64"/>
@@ -362,7 +352,7 @@
         <output goods-type="model.goods.crosses" value="5"/>
       </production>
       <production>
-        <output goods-type="model.goods.crosses" value="10"/>
+        <output goods-type="model.goods.crosses" value="12"/>
       </production>
       <required-goods id="model.goods.hammers"
                       value="176"/>
