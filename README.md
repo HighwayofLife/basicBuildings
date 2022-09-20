@@ -3,10 +3,6 @@ This is a [FreeCol](http://www.freecol.org/) Mod. FreeCol is a turn-based strate
 
 # Basic Buildings
 This Mod makes a colony entirely blank except for the Town Hall, carpenter house, depot, and pasture. Effectively making each building within a colony a requirement to build before it can be used. This puts a much bigger emphasis on being able to build buildings and is more 'realistic' for colonial times. A note about crosses, a chapel is required to produce crosses, thus a Colony will not produce any crosses until a chapel is built.
-* All shops produces 50% more output than they consume.
-* All factories produce 100% more output than they consume.
-* Custom Houses can produce Trade Goods
-* Doubles the output of Hammers
 
 ## Download
 To obtain this mod. Click the Download link above or git clone this repo into your mods folder.
